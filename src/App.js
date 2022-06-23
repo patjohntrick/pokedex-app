@@ -33,8 +33,9 @@ function App() {
       </header>
       <section>
         <PokemonContext.Provider value={pokemon}>
+          <Homepage />
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            {/* <Route path="/" element={<Homepage />} /> */}
             <Route path="pokemon/:name" element={<PokemonPage />} />
           </Routes>
         </PokemonContext.Provider>
