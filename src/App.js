@@ -25,7 +25,7 @@ function App() {
     fetchPokemon();
   }, []);
 
-  // console.log(pokemon);
+  console.log(pokemon);
   return (
     <div className="App flex container-sm bg-secondary ">
       <header className=" px-4 py-2 text-white">
@@ -33,9 +33,9 @@ function App() {
       </header>
       <section>
         <PokemonContext.Provider value={pokemon}>
-          <Homepage />
+          {/* <Homepage /> */}
           <Routes>
-            {/* <Route path="/" element={<Homepage />} /> */}
+            <Route path="pokedex-app/" element={<Homepage />} />
             <Route path="pokemon/:name" element={<PokemonPage />} />
           </Routes>
         </PokemonContext.Provider>
