@@ -13,7 +13,7 @@ const Homepage = () => {
           return (
             <div key={index} className="col-md-4">
               <Link
-                to={`pokedex-app/pokemon/${data.name}`}
+                to={`/pokemon/${data.name}`}
                 target="_blank"
                 style={{ textDecorationLine: "none" }}
               >
