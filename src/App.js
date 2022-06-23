@@ -36,7 +36,7 @@ function App() {
           {/* <Homepage /> */}
           <Routes>
             <Route path="pokedex-app/" element={<Homepage />} />
-            <Route path="pokedex-app/pokemon/:name" element={<PokemonPage />} />
+            <Route path="/pokemon/:name" element={<PokemonPage />} />
           </Routes>
         </PokemonContext.Provider>
       </section>
