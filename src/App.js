@@ -1,8 +1,8 @@
-import Homepage from "./components/Homepage";
 // import "./App.css";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Routes, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
 import PokemonPage from "./components/PokemonPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -35,7 +35,7 @@ function App() {
         <PokemonContext.Provider value={pokemon}>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/pokemon/:name" element={<PokemonPage />} />
+            <Route path="pokemon/:name" element={<PokemonPage />} />
           </Routes>
         </PokemonContext.Provider>
       </section>

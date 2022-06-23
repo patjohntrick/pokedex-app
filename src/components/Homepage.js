@@ -7,31 +7,6 @@ const Homepage = () => {
   const pokemon = useContext(PokemonContext);
   // console.log(pokemon);
   return (
-    // <section>
-    //   <div className="pokemon-container">
-    //     {pokemon.map((data, index) => {
-    //       return (
-    //         <div key={index}>
-    //           <Link
-    //             to={`/pokemon/${data.name}`}
-    //             target="_blank"
-    //             style={{ textDecorationLine: "none" }}
-    //           >
-    //             <Button
-    //               variant="contained"
-    //               sx={{
-    //                 width: 120,
-    //                 margin: 1,
-    //               }}
-    //             >
-    //               <p>{data.name}</p>
-    //             </Button>
-    //           </Link>
-    //         </div>
-    //       );
-    //     })}
-    //   </div>
-    // </section>
     <section>
       <div className="pokemon-container row pt-3 bg-light">
         {pokemon.map((data, index) => {
