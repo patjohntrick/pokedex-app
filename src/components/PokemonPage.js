@@ -21,7 +21,9 @@ const PokemonPage = () => {
 
   const testFunction = () => {
     console.log("testing for git branching");
-  }
+  };
+
+  // test function here
 
   // // palindrome
   // const palindromeChecker = () => {
