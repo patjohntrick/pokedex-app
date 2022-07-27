@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { PokemonContext } from "../App";
 import { Link } from "react-router-dom";
+import Test from "./Test.ts";
 
 const Homepage = () => {
   // context

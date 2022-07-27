@@ -16,8 +16,24 @@ const PokemonPage = () => {
     );
     const data = await response.data;
     setPokemon(data);
-    console.log(data);
+    // console.log(data);
   };
+
+  const testFunction = () => {
+    console.log("testing for git branching");
+  }
+
+  // // palindrome
+  // const palindromeChecker = () => {
+  //   const pokename = pokemon ? params.name : "loading";
+  //   let nameStr = pokename.length;
+  //   let reverseName = "";
+  //   for (let i = 0; i < nameReverse; i++) {
+  //     // reverseName = pokename[i];
+  //     console.log(i);
+  //   }
+  //   // console.log(nameStr);
+  // };
 
   // type
   const type = pokemon.name
@@ -33,7 +49,9 @@ const PokemonPage = () => {
 
   useEffect(() => {
     fetchPokemon();
+    // palindromeChecker();
   }, []);
+
   return (
     <section>
       <div className="row px-4 pt-3 bg-light row">
