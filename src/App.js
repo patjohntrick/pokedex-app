@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App flex container-sm bg-secondary ">
       <header className=" px-4 py-2 text-white">
-        <h1>Pokedexxxx</h1>
+        <h1>Patrick</h1>
       </header>
       <section>
         <PokemonContext.Provider value={pokemon}>
